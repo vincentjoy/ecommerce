@@ -25,9 +25,6 @@ SECRET_KEY = 'django-insecure-5v!6q2u@t7(%&5dsj%*n0*o%=_aan*fdz%8dwq@ss751ro_j_@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -68,17 +65,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'drfecommerce.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Password validation
