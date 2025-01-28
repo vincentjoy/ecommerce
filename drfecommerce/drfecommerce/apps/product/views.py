@@ -13,6 +13,5 @@ class CategoryView(viewsets.ViewSet):
     queryset = Category.objects.all()
 
     def list(self, request):
-        queryset = self.get_queryset()
-        serializer = CategorySerializer(queryset, many=True)
+        serializer = CategorySerializer(self.queryset, many=True)
         return Response(serializer.data)
